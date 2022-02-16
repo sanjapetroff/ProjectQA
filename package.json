@@ -1,0 +1,22 @@
+{
+  "name": "projectqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.16.15"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.16.15",
+    "@wdio/mocha-framework": "^7.16.15",
+    "@wdio/spec-reporter": "^7.16.14",
+    "chromedriver": "^98.0.0",
+    "wdio-chromedriver-service": "^7.2.6"
+  }
+}
