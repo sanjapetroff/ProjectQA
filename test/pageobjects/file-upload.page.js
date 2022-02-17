@@ -1,4 +1,5 @@
 const Page = require('./page');
+const path = require('path');
 
 class FileUploadPage extends Page {
 
@@ -15,15 +16,24 @@ class FileUploadPage extends Page {
     }
 
     get uploadButton() {
-        return $('file-submit');
+        return $('#file-submit');
     }
 
-    async chooseOptions (value) {
-        await $(await this.dropdownList).selectByVisibleText(value);
+    get fileUploadedTitle() {
+        return '//*[@id="content"]/div/h3';
+    }
 
-        const option = await $$('option')
-        const attr = await option[1].getAttribute('selected')
-        return attr;
+    get uploadMessage() {
+        return $('#uploaded-files')
+    }
+
+    async uploadFileButton() {
+        const filePath = path.join(__dirname, '../data/SP_eCommerce_test_plan.docx');
+        const fileUploader = await browser.uploadFile(filePath);
+
+        await this.chooseFile.setValue(fileUploader);
+        await this.uploadButton.waitForEnabled();
+        await this.uploadButton.click();
     }
 
     open() {
