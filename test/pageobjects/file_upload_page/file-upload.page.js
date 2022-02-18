@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('../basic_pages/page');
 const path = require('path');
 
 class FileUploadPage extends Page {
@@ -27,8 +27,8 @@ class FileUploadPage extends Page {
         return $('#uploaded-files')
     }
 
-    async uploadFileButton() {
-        const filePath = path.join(__dirname, '../data/SP_eCommerce_test_plan.docx');
+    async uploadFileButton() {              
+        const filePath = path.join('./test/data/Test upload file.docx');
         const fileUploader = await browser.uploadFile(filePath);
 
         await this.chooseFile.setValue(fileUploader);

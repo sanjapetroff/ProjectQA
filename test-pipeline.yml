@@ -1,0 +1,45 @@
+client:
+  name: DEPT
+  industry: Agency
+
+project:
+  name: The assignment QA Engineer
+
+test:
+  manual-effort-minutes: 10
+  automation-maintanance-seconds: 40
+  automated: true
+  automation-priority: 1
+  type:
+    - functional
+  language:
+    - javascript
+  framework:
+    - webdriverio
+    - nodejs
+  cicd: true
+  os: macOS
+  docker: false
+  technology:
+    - webui
+  test_cases:
+    - name: TC1
+      manual-executions-time: 10
+      automated-development-time: 480
+    - name: TC2
+      manual-executions-time: 10
+      automated-development-time: 480
+    - name: TC3
+    manual-executions-time: 10
+    automated-development-time: 480
+    - name: TC4
+    manual-executions-time: 10
+    automated-development-time: 480
+
+application:
+  name: herokaupp
+  name: automationpractice
+  technology:
+    - React
+  language:
+    - JavaScript

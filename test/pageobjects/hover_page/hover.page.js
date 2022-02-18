@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('../basic_pages/page');
 
 class HoverPage extends Page {
     

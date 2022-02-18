@@ -1,7 +1,4 @@
-const HoverPage = require('../pageobjects/hover.page');
-const SecurePage = require('../pageobjects/secure.page');
-const DropdownPage = require('../pageobjects/dropdown.page');
-
+const HoverPage = require('../pageobjects/hover_page/hover.page');
 
 describe('Hover image for additional info', () => {
     it('should hover over the image to see info', async () => {

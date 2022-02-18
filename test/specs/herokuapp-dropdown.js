@@ -1,5 +1,4 @@
-const DropdownPage = require('../pageobjects/dropdown.page');
-const SecurePage = require('../pageobjects/secure.page');
+const DropdownPage = require('../pageobjects/dropdown_page/dropdown.page');
 
 describe('Dropdown list', () => {
     it('should verify the header titile and open and click an option from the dropdown', async () => {

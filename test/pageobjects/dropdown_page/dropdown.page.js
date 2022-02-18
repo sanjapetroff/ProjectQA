@@ -1,6 +1,6 @@
 
 
-const Page = require('./page');
+const Page = require('../basic_pages/page');
 
 class DropdownPage extends Page {
 

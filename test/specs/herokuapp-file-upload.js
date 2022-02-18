@@ -1,4 +1,4 @@
-const FileUploadPage = require('../pageobjects/file-upload.page');
+const FileUploadPage = require('../pageobjects/file_upload_page/file-upload.page');
 
 describe('Upload file', () => {
     it('upload file using button', async () => {
